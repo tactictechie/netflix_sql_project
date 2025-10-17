@@ -19,7 +19,7 @@
 
 ## Dataset
 
-* **Source ([original dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows?resource=download)):** Kaggle — Netflix Movies and TV Shows dataset.
+* **Source ([original dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows?resource=download)):** Kaggle - Netflix Movies and TV Shows dataset.
 * **Working table:** `netflix_data` (see schema and SQL below).
 
 ---
@@ -219,25 +219,14 @@ This README and the included SQL address the following business questions (15 to
 
 ---
 
-## Notes & Assumptions
+## Notes 
 
-* The `release_year` column in the schema is a `date` type — some queries use `YEAR(release_year)` to extract the year.
+* The `release_year` column in the schema is a `date` type - some queries use `YEAR(release_year)` to extract the year.
 * The `country`, `cast`, `director`, and `listed_in` columns often contain comma-separated values; queries use `STRING_SPLIT` / `CROSS APPLY` / `TRIM` or `UNNEST` logic to normalize them.
 * Date parsing and functions (e.g., `GETDATE()`, `YEAR()`) are written for SQL Server syntax.
 
 ---
 
-## License
 
-For educational and analytical purposes. © Shivang Sagwaliya
 
----
-
-If you want, I can also:
-
-* Produce a downloadable `README.md` file for your repo,
-* Add a short `CONTRIBUTING.md`, or
-* Generate sample results (tables/visuals) using a subset of the dataset you provide.
-
-Tell me which one you want next.
 
